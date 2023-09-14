@@ -53,16 +53,24 @@ List<Address> ReadFile()
 // Funzione che stampa in un file la lista di indirizzi
 void PrintFile(string fileName, List<Address> addresses)
 {
-    string path = $"C:\\Users\\user\\Desktop\\DotNet\\csharp-lista-indirizzi\\csharp-lista-indirizzi\\{fileName}";
-
-    StreamWriter writer = File.CreateText(path);
-
-    foreach(Address address in addresses)
+    try
     {
-        writer.WriteLine(address);
+        string path = $"C:\\Users\\user\\Desktop\\DotNet\\csharp-lista-indirizzi\\csharp-lista-indirizzi\\{fileName}";
+
+        StreamWriter writer = File.CreateText(path);
+
+        foreach(Address address in addresses)
+        {
+            writer.WriteLine(address);
+        }
+
+        writer.Close();
+    }catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
 
-    writer.Close();
+
 
 }
 
