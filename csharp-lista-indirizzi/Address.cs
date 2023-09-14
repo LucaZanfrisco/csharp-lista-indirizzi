@@ -25,5 +25,17 @@ namespace csharp_lista_indirizzi
             Province = province;
             Zip = zip;
         }
+
+        public override string ToString()
+        {
+            return $@"
+Nome: {Name}
+Cognome: {Surname}
+Via: {Street}
+Città: {City}
+Provincia: {Province}
+Cap: {Zip}
+--------------";
+        }
     }
 }
