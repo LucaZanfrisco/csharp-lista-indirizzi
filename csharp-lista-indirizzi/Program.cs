@@ -2,6 +2,9 @@
 
 using csharp_lista_indirizzi;
 
+// FUNZIONI
+
+// Funzione che restituisce un lista di indirizzi letti da un file CSV
 List<Address> ReadFile()
 {
     List<Address> addresses = new List<Address>();
@@ -41,6 +44,9 @@ List<Address> ReadFile()
     return addresses;
 }
 
+
+
+// MAIN
 List<Address> addresses = ReadFile();
 foreach( Address address in addresses)
 {
