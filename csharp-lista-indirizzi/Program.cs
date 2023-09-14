@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using csharp_lista_indirizzi;
+using System.IO.Enumeration;
 
 // FUNZIONI
 
@@ -44,6 +45,22 @@ List<Address> ReadFile()
     return addresses;
 }
 
+// Funzione che stampa in un file la lista di indirizzi
+void PrintFile(string fileName, List<Address> addresses)
+{
+    string path = $"C:\\Users\\user\\Desktop\\DotNet\\csharp-lista-indirizzi\\csharp-lista-indirizzi\\{fileName}";
+
+    StreamWriter writer = File.CreateText(path);
+
+    foreach(Address address in addresses)
+    {
+        writer.WriteLine(address);
+    }
+
+    writer.Close();
+
+}
+
 
 
 // MAIN
@@ -52,3 +69,9 @@ foreach( Address address in addresses)
 {
     Console.WriteLine(address);
 }
+
+Console.Write("Inserire il nome del file su cui stampare: ");
+string fileName = Console.ReadLine();
+
+PrintFile(fileName, addresses);
+

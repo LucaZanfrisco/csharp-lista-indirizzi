@@ -1,0 +1,28 @@
+Nome: John
+Cognome: Doe
+Via: 120 jefferson st.
+Città: Riverside
+Provincia: NJ
+Cap: 8075
+--------------
+Nome: Jack
+Cognome: McGinnis
+Via: 220 hobo Av.
+Città: Phila
+Provincia: PA
+Cap: 9119
+--------------
+Nome: John Da Man
+Cognome: Repici
+Via: 120 Jefferson St.
+Città: Riverside
+Provincia: NJ
+Cap: 8075
+--------------
+Nome: Stephen
+Cognome: Tyler
+Via: 7452 Terrace "At the Plaza" road
+Città: SomeTown
+Provincia: SD
+Cap: 91234
+--------------
